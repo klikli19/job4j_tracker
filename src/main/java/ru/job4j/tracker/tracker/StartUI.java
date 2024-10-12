@@ -8,7 +8,7 @@ import java.util.List;
 
 public class StartUI {
 
-    public void startMenu(Input input, Tracker tracker, List<UserAction> actions) {
+    public void startMenu(Input input, MemTracker tracker, List<UserAction> actions) {
         boolean start = true;
         while (start) {
             showMenu(actions);
@@ -31,7 +31,7 @@ public class StartUI {
 
     public static void main(String[] args) {
         Input input = new ConsoleInput();
-        Tracker tracker = new Tracker();
+        MemTracker memTracker = new MemTracker();
         List<UserAction> actions = List.of(
                 new CreateAction(),
                 new DeleteAction(),
@@ -41,6 +41,6 @@ public class StartUI {
                 new FindByNameAction(),
                 new ExitAction()
         );
-        new StartUI().startMenu(input, tracker, actions);
+        new StartUI().startMenu(input, memTracker, actions);
     }
 }
