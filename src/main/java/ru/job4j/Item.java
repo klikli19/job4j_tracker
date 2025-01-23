@@ -1,19 +1,26 @@
 package ru.job4j;
 
-import lombok.Data;
+import lombok.*;
+
+import javax.persistence.*;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
+@Entity
+@Table(name = "items")
 @Data
+@RequiredArgsConstructor
+@NoArgsConstructor
 public class Item {
-    private int id;
-    private String name;
-    private final LocalDateTime created = LocalDateTime.now();
-    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
 
-    public Item(String name) {
-        this.name = name;
-    }
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    @NonNull
+    private String name;
+
+    private LocalDateTime created = LocalDateTime.now();
 
 }
+
