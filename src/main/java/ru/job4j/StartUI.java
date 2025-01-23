@@ -2,8 +2,6 @@ package ru.job4j;
 
 import ru.job4j.action.*;
 import ru.job4j.input.Input;
-import ru.job4j.tracker.action.*;
-import ru.job4j.tracker.tracker.action.*;
 import ru.job4j.input.ConsoleInput;
 
 import java.util.List;
