@@ -15,4 +15,5 @@ public class ConsoleInput implements Input {
     public int choice(String question) {
         return Integer.parseInt(actions(question));
     }
+
 }
