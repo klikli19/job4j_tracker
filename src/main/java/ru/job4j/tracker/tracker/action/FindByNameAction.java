@@ -6,7 +6,7 @@ import ru.job4j.tracker.tracker.input.Input;
 
 import java.util.List;
 
-public class FindByNameAction implements UserAction{
+public class FindByNameAction implements UserAction {
     @Override
     public String name() {
         return "Найти задачу по имени";

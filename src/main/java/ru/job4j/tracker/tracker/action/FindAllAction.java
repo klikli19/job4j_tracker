@@ -6,7 +6,7 @@ import ru.job4j.tracker.tracker.input.Input;
 
 import java.util.List;
 
-public class FindAllAction implements UserAction{
+public class FindAllAction implements UserAction {
     @Override
     public String name() {
         return "Показать все задачи";

@@ -4,7 +4,7 @@ import ru.job4j.tracker.tracker.Item;
 import ru.job4j.tracker.tracker.Tracker;
 import ru.job4j.tracker.tracker.input.Input;
 
-public class DeleteAction implements UserAction{
+public class DeleteAction implements UserAction {
     @Override
     public String name() {
         return "Удалить задачу";

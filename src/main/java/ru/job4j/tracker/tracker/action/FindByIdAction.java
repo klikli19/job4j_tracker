@@ -4,7 +4,7 @@ import ru.job4j.tracker.tracker.Item;
 import ru.job4j.tracker.tracker.Tracker;
 import ru.job4j.tracker.tracker.input.Input;
 
-public class FindByIdAction implements UserAction{
+public class FindByIdAction implements UserAction {
     @Override
     public String name() {
         return "Найти задачу по Id";
