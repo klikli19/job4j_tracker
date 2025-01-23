@@ -1,8 +1,8 @@
-package ru.job4j.tracker.tracker.action;
+package ru.job4j.action;
 
-import ru.job4j.tracker.tracker.Item;
-import ru.job4j.tracker.tracker.Tracker;
-import ru.job4j.tracker.tracker.input.Input;
+import ru.job4j.input.Input;
+import ru.job4j.Item;
+import ru.job4j.Tracker;
 
 public class CreateAction implements UserAction {
     @Override
