@@ -1,16 +1,11 @@
 package ru.job4j.tracker.tracker;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-@Getter
-@Setter
-@RequiredArgsConstructor
+@Data
 public class Item {
     private int id;
     private String name;
@@ -21,12 +16,4 @@ public class Item {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Item{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", created=" + created.format(FORMATTER) +
-                '}';
-    }
 }
